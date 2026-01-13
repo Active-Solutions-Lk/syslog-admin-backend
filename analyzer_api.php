@@ -84,7 +84,7 @@ try {
 
 // PROJECT VALIDATION (activation_key)
 try {
-    $project = RequestValidator::validateActivationKey($pdo, $activation_key, false); // false for analyzer
+    $project = RequestValidator::validateActivationKey($pdo, $activation_key, false, $type); // false for analyzer, passing request type
     $project_id = $project['id'];
 } catch (Exception $e) {
     // Log the rejection to api_logs

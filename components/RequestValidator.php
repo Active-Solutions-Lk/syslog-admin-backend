@@ -30,7 +30,7 @@ class RequestValidator
         }
     }
     
-    public static function validateActivationKey($pdo, $activationKey, $forCollector = true)
+    public static function validateActivationKey($pdo, $activationKey, $forCollector = true, $requestType = 'coll-reg')
     {
         if ($forCollector) {
             $stmt = $pdo->prepare("SELECT id, status, is_active_coll FROM projects WHERE activation_key = ? LIMIT 1");
@@ -50,12 +50,13 @@ class RequestValidator
         }
         
         // Check if the activation key is already used for the specific component type
-        if ($forCollector) {
+        // Only check for duplicate registration on registration requests, not health checks
+        if ($forCollector && $requestType === 'coll-reg') {
             // For collector registration, check if is_active_coll is already set to 1
             if ($project['is_active_coll'] == 1) {
                 throw new Exception('Activation key already registered for collector', 305);
             }
-        } else {
+        } elseif (!$forCollector && $requestType === 'an-reg') {
             // For analyzer registration, check if is_active_an is already set to 1
             if ($project['is_active_an'] == 1) {
                 throw new Exception('Activation key already registered for analyzer', 305);
