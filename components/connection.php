@@ -5,7 +5,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');          // change to your DB user
 define('DB_PASS', '');              // change to your DB password
-define('DB_NAME', 'remote_admin');
+define('DB_NAME', 'syslog_admin');
 
 // Static token - THIS MUST MATCH THE ONE USED ON CLIENT SIDE
 define('STATIC_TOKEN', 'I3UYA2HSQPB86XpsdVUb9szDu5tn2W3fOpg8'); // Secret Key for collector requests

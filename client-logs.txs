@@ -1,0 +1,75 @@
+root@VM-748b2572-5bb2-499a-a4c8-17b6f7e01b67:/var/www/html/setup-active-syslog# tail -f cron_job.log
+[2026-01-13 17:30:02] cron_job.sh finished
+[2026-01-13 17:35:01] cron_job.sh started
+[2026-01-13 17:35:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:35:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:35:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:35:02+00:00","activated":true}
+[2026-01-13 17:35:03] cron_job.sh finished
+[2026-01-13 17:39:02] cron_job.sh started
+[2026-01-13 17:39:02] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:39:02] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:39:02] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:39:03+00:00","activated":true}
+[2026-01-13 17:39:04] cron_job.sh finished
+[2026-01-13 17:40:01] cron_job.sh started
+[2026-01-13 17:40:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:40:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:40:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:40:02+00:00","activated":true}
+[2026-01-13 17:40:03] cron_job.sh finished
+[2026-01-13 17:45:01] cron_job.sh started
+[2026-01-13 17:45:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:45:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:45:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:45:02+00:00","activated":true}
+[2026-01-13 17:45:03] cron_job.sh finished
+[2026-01-13 17:50:01] cron_job.sh started
+[2026-01-13 17:50:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:50:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:50:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:50:02+00:00","activated":true}
+[2026-01-13 17:50:03] cron_job.sh finished
+[2026-01-13 17:55:01] cron_job.sh started
+[2026-01-13 17:55:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 17:55:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 17:55:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T17:55:02+00:00","activated":true}
+[2026-01-13 17:55:03] cron_job.sh finished
+[2026-01-13 18:00:01] cron_job.sh started
+[2026-01-13 18:00:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 18:00:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 18:00:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T18:00:02+00:00","activated":true}
+[2026-01-13 18:00:03] cron_job.sh finished
+[2026-01-13 18:05:01] cron_job.sh started
+[2026-01-13 18:05:01] Executing MySQL command: mysql --user=Admin --password=Admin@collector1 --host=localhost --skip-column-names --batch --execute="SELECT activation_key, collector_id FROM syslog_db.self WHERE activation_key IS NOT NULL AND activation_key <> ''" 2>>"/var/www/html/setup-active-syslog/cron_job.log"
+[2026-01-13 18:05:01] Query result: 'O5OT-BZCB-3G1O     4'
+[2026-01-13 18:05:01] Calling client_collector_request.php for collector_id=4
+Successfully inserted/updated collector data in DB.
+Success: true
+Message: Activation successful
+Full response: {"success":true,"message":"Activation successful","project_id":2,"collector_id":4,"type":"coll-health","timestamp":"2026-01-13T18:05:01+00:00","activated":true}
+[2026-01-13 18:05:02] cron_job.sh finished
+

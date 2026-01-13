@@ -178,6 +178,16 @@ if ($type === 'coll-reg') {
     
     // Insert into api_logs for health check
     Logger::logSuccess($pdo, $project_id, $cpu_count, $ram_usage, $log_count, $type, 'Collector Health Update');
+    
+    // Return success response for health check
+    echo ResponseBuilder::success(
+        'Activation successful',
+        $project_id,
+        $col_id,
+        $type,
+        ['activated' => true]
+    );
+    exit;
 } else {
     // For 'collector' and 'analyzer' types (existing behavior)
     try {
@@ -203,10 +213,8 @@ if ($type === 'coll-reg') {
     
     // Insert into api_logs
     Logger::logSuccess($pdo, $project_id, $cpu_count, $ram_usage, $log_count, $type, ucfirst($type) . ' heartbeat');
-}
-
-// For coll-health and other types, return the standard success response
-if ($type !== 'coll-reg') {
+    
+    // Return success response for other types
     echo ResponseBuilder::success(
         'Activation successful',
         $project_id,
@@ -214,6 +222,8 @@ if ($type !== 'coll-reg') {
         $type,
         ['activated' => true]
     );
+    exit;
 }
+
 
 ?>
